@@ -1,6 +1,8 @@
 channels:
   - manics
+  - conda-forge
 dependencies:
+  - spyder
   - websockify
   - pip:
     - .
