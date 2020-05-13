@@ -123,7 +123,11 @@
         // Show a status text in the top bar
         function status(text, show=true) {
             document.getElementById('status').textContent = text;
-            document.getElementById('status').show = show
+            if (show) {
+                document.getElementById('top_bar').style.display = 'block'
+            } else {
+                document.getElementById('top_bar').style.display = 'none'
+            }
         }
 
         // This function extracts the value of one variable from the
