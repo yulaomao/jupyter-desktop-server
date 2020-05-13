@@ -13,7 +13,7 @@ def setup_desktop():
 
     vnc_command = ' '.join((shlex.quote(p) for p in [
         os.path.join(HERE, 'share/tigervnc/bin/x0vncserver'),
-        '-verbose',
+        #'-verbose',
         #'-xstartup', os.path.join(HERE, 'share/xstartup'),
         #'-geometry', '1680x1050',
         '-SecurityTypes', 'None',
