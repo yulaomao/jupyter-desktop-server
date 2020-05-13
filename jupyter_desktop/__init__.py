@@ -34,5 +34,5 @@ def setup_desktop():
         ],
         'port': 5901,
         'timeout': 30,
-        'mappath': {'/': '/vnc_lite.html'},
+        'mappath': {'/': '/vnc_noheader.html'},
     }
