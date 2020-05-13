@@ -19,7 +19,7 @@ def setup_desktop():
         '-SecurityTypes', 'None',
         '-rfbunixpath', sockets_path,
         #'-fg',
-        '-display :10',
+        '-display', ':10',
     ]))
     return {
         'command': [
