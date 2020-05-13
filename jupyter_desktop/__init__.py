@@ -12,14 +12,14 @@ def setup_desktop():
     sockets_path = os.path.join(sockets_dir, 'vnc-socket')
 
     vnc_command = ' '.join((shlex.quote(p) for p in [
-        os.path.join(HERE, 'share/tigervnc/bin/vncserver'),
+        os.path.join(HERE, 'share/tigervnc/bin/x0vncserver'),
         '-verbose',
         #'-xstartup', os.path.join(HERE, 'share/xstartup'),
         #'-geometry', '1680x1050',
         '-SecurityTypes', 'None',
         '-rfbunixpath', sockets_path,
         #'-fg',
-        ':10',
+        '-display :10',
     ]))
     return {
         'command': [
